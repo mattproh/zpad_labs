@@ -1,0 +1,5 @@
+venv/
+vhi_data/
+*.zip
+*.txt
+*.csv
