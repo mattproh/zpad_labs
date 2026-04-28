@@ -1,5 +1,5 @@
 venv/
 vhi_data/
 *.zip
-*.txt
+household_power_consumption.txt
 *.csv
