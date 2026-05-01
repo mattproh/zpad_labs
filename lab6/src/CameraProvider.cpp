@@ -2,7 +2,7 @@
 #include <iostream>
 
 CameraProvider::CameraProvider(int cameraId) {
-    cap.open(cameraId);
+    cap.open(cameraId, cv::CAP_V4L2);
     if (!cap.isOpened()) {
         std::cerr << "Помилка: Не вдалося відкрити камеру!" << std::endl;
     }
