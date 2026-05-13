@@ -12,7 +12,8 @@ st.set_page_config(page_title="Lab 5: Data Analysis", layout="wide")
 @st.cache_data
 def load_data():
     all_data = []
-    folder_path = "vhi_data"
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    folder_path = os.path.join(current_dir, "vhi_data")
     
     for filename in os.listdir(folder_path):
         if filename.endswith(".csv"):
