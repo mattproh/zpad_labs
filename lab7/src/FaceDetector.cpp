@@ -3,7 +3,7 @@
 
 FaceDetector::FaceDetector() : hasNewFrame(false), isRunning(true) {
     try {
-        net = cv::dnn::readNetFromCaffe("deploy.prototxt", "res10_300x300_ssd_iter_140000.caffemodel");
+        net = cv::dnn::readNetFromCaffe("../deploy.prototxt", "../res10_300x300_ssd_iter_140000.caffemodel");   
     } catch (const cv::Exception& e) {
         std::cerr << "Network loading error: " << e.what() << std::endl;
     }
